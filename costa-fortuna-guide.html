@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>코스타 포르투나 완벽 가이드 | 층별안내 · 무료/유료 총정리</title>
+<meta name="description" content="코스타 포르투나(Costa Fortuna) 13개 데크 층별안내, 무료와 유료 구분, 와이파이 사용법, 수영장·자쿠지, 정찬 레스토랑, 음료 패키지까지 한 번에 정리했습니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="코스타 포르투나 완벽 가이드">
+<meta property="og:description" content="층별안내부터 무료/유료 구분, 와이파이, 다이닝, 음료 패키지까지 — 승선 전 딱 한 번만 읽으면 되는 정리본.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+@font-face{
+  font-family:'GmarketSans';
+  src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight:700; font-display:swap;
+}
+@font-face{
+  font-family:'GmarketSans';
+  src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight:500; font-display:swap;
+}
+
+:root{
+  --navy:#1B3A5C;
+  --navy-deep:#132A43;
+  --navy-soft:#2E5378;
+  --gold:#D4A94A;
+  --gold-pale:#EFDCAF;
+  --ivory:#FAF7F2;
+  --ivory-warm:#F2ECE1;
+  --ink:#20303F;
+  --muted:#6B7C8C;
+  --line:rgba(27,58,92,.14);
+  --shadow:0 6px 24px rgba(27,58,92,.09);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;
+  background:var(--ivory);
+  color:var(--ink);
+  line-height:1.72;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+  font-weight:400;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
+}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 22px;}
+
+/* ---------- HERO ---------- */
+.hero{
+  min-height:100dvh;
+  background:
+    radial-gradient(120% 80% at 50% 0%, #2E5378 0%, var(--navy) 42%, var(--navy-deep) 100%);
+  color:#fff;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;
+  padding:calc(64px + env(safe-area-inset-top)) 22px 72px;
+}
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:120px;
+  background:linear-gradient(to bottom,rgba(250,247,242,0),var(--ivory));
+}
+.wave{
+  position:absolute;left:-10%;right:-10%;bottom:88px;height:180px;
+  background:
+    radial-gradient(60% 100% at 20% 100%, rgba(212,169,74,.10), transparent 70%),
+    radial-gradient(60% 100% at 80% 100%, rgba(212,169,74,.08), transparent 70%);
+  pointer-events:none;
+}
+.hero-inner{position:relative;z-index:2;max-width:720px;margin:0 auto;width:100%;}
+.hero .kicker{
+  font-family:'GmarketSans',sans-serif;font-weight:500;
+  color:var(--gold);letter-spacing:.24em;font-size:11px;
+  text-transform:uppercase;margin-bottom:20px;
+}
+.hero h1{
+  font-family:'GmarketSans',sans-serif;font-weight:700;
+  font-size:clamp(30px,8.4vw,46px);line-height:1.28;letter-spacing:-.01em;
+  margin-bottom:18px;
+}
+.hero h1 em{font-style:normal;color:var(--gold-pale);}
+.hero p{
+  font-size:15px;color:rgba(255,255,255,.80);font-weight:300;
+  max-width:30em;margin-bottom:34px;
+}
+.hero-stats{
+  display:flex;gap:0;border-top:1px solid rgba(255,255,255,.18);
+  border-bottom:1px solid rgba(255,255,255,.18);
+}
+.hero-stat{flex:1;padding:16px 6px;text-align:center;}
+.hero-stat + .hero-stat{border-left:1px solid rgba(255,255,255,.14);}
+.hero-stat b{
+  display:block;font-family:'GmarketSans',sans-serif;font-weight:700;
+  font-size:22px;color:var(--gold);line-height:1.2;
+}
+.hero-stat span{font-size:11px;color:rgba(255,255,255,.62);letter-spacing:.04em;}
+.scroll-hint{
+  margin-top:34px;font-size:11px;letter-spacing:.16em;
+  color:rgba(255,255,255,.45);text-align:center;
+}
+
+/* ---------- SECTION ---------- */
+section{padding:64px 0 8px;}
+.overline{
+  font-family:'GmarketSans',sans-serif;font-weight:500;
+  color:var(--gold);letter-spacing:.2em;font-size:11px;
+  text-transform:uppercase;margin-bottom:8px;display:block;
+}
+h2{
+  font-family:'GmarketSans',sans-serif;font-weight:700;
+  font-size:clamp(21px,5.6vw,27px);color:var(--navy);
+  line-height:1.4;margin-bottom:12px;letter-spacing:-.01em;
+}
+.lead{font-size:14.5px;color:var(--muted);margin-bottom:28px;}
+
+/* ---------- DECK STACK (signature) ---------- */
+.stack{border-radius:14px;overflow:hidden;box-shadow:var(--shadow);background:#fff;}
+.deck{border-bottom:1px solid var(--line);}
+.deck:last-child{border-bottom:none;}
+.deck-btn{
+  width:100%;min-height:54px;display:flex;align-items:center;gap:12px;
+  padding:12px 16px;background:#fff;border:none;cursor:pointer;
+  text-align:left;font-family:inherit;transition:background .18s ease;
+}
+.deck-btn:hover{background:var(--ivory-warm);}
+.deck-btn:focus-visible{outline:2px solid var(--gold);outline-offset:-3px;}
+.deck-no{
+  flex:0 0 42px;height:34px;border-radius:7px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'GmarketSans',sans-serif;font-weight:700;font-size:15px;
+  background:var(--ivory-warm);color:var(--navy-soft);
+}
+.deck.is-public .deck-no{background:var(--navy);color:var(--gold-pale);}
+.deck-name{flex:1;min-width:0;}
+.deck-name b{
+  display:block;font-size:14.5px;font-weight:500;color:var(--navy);
+  font-family:'GmarketSans',sans-serif;
+}
+.deck-name span{display:block;font-size:11.5px;color:var(--muted);letter-spacing:.03em;}
+.deck-arrow{
+  flex:0 0 20px;color:var(--gold);font-size:13px;
+  transition:transform .22s ease;
+}
+.deck.open .deck-arrow{transform:rotate(90deg);}
+.deck-body{
+  display:none;padding:2px 16px 18px 70px;background:#fff;
+  font-size:13.5px;color:var(--ink);
+}
+.deck.open .deck-body{display:block;}
+.deck-body li{list-style:none;padding:5px 0 5px 14px;position:relative;line-height:1.6;}
+.deck-body li::before{
+  content:"";position:absolute;left:0;top:14px;
+  width:5px;height:5px;border-radius:50%;background:var(--gold);
+}
+.deck-body .tagfree,.deck-body .tagpaid{
+  display:inline-block;font-size:10.5px;padding:1px 7px;border-radius:20px;
+  margin-left:6px;vertical-align:middle;font-weight:500;
+}
+.tagfree{background:rgba(27,58,92,.09);color:var(--navy);}
+.tagpaid{background:rgba(212,169,74,.20);color:#96751F;}
+
+.note{
+  margin-top:16px;padding:14px 16px;border-left:3px solid var(--gold);
+  background:var(--ivory-warm);border-radius:0 8px 8px 0;
+  font-size:13px;color:var(--navy);
+}
+
+/* ---------- TWO COLUMN FREE/PAID ---------- */
+.fp{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.fp-col{background:#fff;border-radius:14px;padding:20px 16px;box-shadow:var(--shadow);}
+.fp-col h3{
+  font-family:'GmarketSans',sans-serif;font-weight:700;font-size:15px;
+  margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid;
+}
+.fp-free h3{color:var(--navy);border-color:var(--navy);}
+.fp-paid h3{color:#96751F;border-color:var(--gold);}
+.fp-col li{list-style:none;font-size:13px;padding:7px 0 7px 16px;position:relative;line-height:1.55;}
+.fp-col li::before{position:absolute;left:0;top:6px;font-size:12px;}
+.fp-free li::before{content:"○";color:var(--navy-soft);}
+.fp-paid li::before{content:"●";color:var(--gold);}
+
+/* ---------- CARDS ---------- */
+.card{
+  background:#fff;border-radius:14px;padding:22px 20px;
+  box-shadow:var(--shadow);margin-bottom:14px;
+}
+.card h3{
+  font-family:'GmarketSans',sans-serif;font-weight:700;
+  font-size:16px;color:var(--navy);margin-bottom:6px;
+}
+.card .sub{font-size:12px;color:var(--muted);margin-bottom:14px;letter-spacing:.02em;}
+.card p{font-size:13.5px;margin-bottom:10px;}
+.card ul{margin:8px 0 0;}
+.card li{list-style:none;font-size:13.5px;padding:6px 0 6px 15px;position:relative;}
+.card li::before{
+  content:"";position:absolute;left:0;top:14px;
+  width:5px;height:5px;border-radius:50%;background:var(--gold);
+}
+.price{
+  float:right;font-family:'GmarketSans',sans-serif;font-weight:700;
+  font-size:13.5px;color:var(--navy);margin-left:10px;
+}
+
+/* ---------- STEPS ---------- */
+.steps{counter-reset:step;}
+.step{
+  display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed var(--line);
+}
+.step:last-child{border-bottom:none;}
+.step-n{
+  flex:0 0 28px;height:28px;border-radius:50%;
+  background:var(--navy);color:var(--gold-pale);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'GmarketSans',sans-serif;font-weight:700;font-size:13px;
+}
+.step-t{flex:1;font-size:13.5px;}
+.step-t b{display:block;color:var(--navy);font-weight:500;margin-bottom:2px;}
+
+/* ---------- NOTICE ---------- */
+.notice{
+  background:var(--navy);color:#fff;border-radius:14px;
+  padding:24px 20px;margin:12px 0 8px;
+}
+.notice .overline{color:var(--gold);}
+.notice h3{
+  font-family:'GmarketSans',sans-serif;font-weight:700;
+  font-size:17px;margin-bottom:10px;
+}
+.notice p{font-size:13.5px;color:rgba(255,255,255,.82);font-weight:300;}
+
+/* ---------- CTA ---------- */
+.cta{
+  margin:56px 0 0;padding:52px 22px calc(56px + env(safe-area-inset-bottom));
+  background:var(--navy-deep);color:#fff;text-align:center;
+}
+.cta .quote{
+  font-style:italic;color:var(--gold);font-size:14.5px;
+  line-height:1.8;margin-bottom:22px;
+}
+.cta .rule{width:36px;height:1px;background:rgba(255,255,255,.28);margin:0 auto 22px;}
+.cta .mark{font-size:22px;margin-bottom:12px;}
+.cta .overline{color:var(--gold);}
+.cta h2{color:#fff;font-size:24px;margin-bottom:10px;}
+.cta p{font-size:13.5px;color:rgba(255,255,255,.72);margin-bottom:26px;font-weight:300;}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:54px;padding:0 34px;border-radius:30px;
+  background:var(--gold);color:var(--navy-deep);
+  font-family:'GmarketSans',sans-serif;font-weight:700;font-size:15px;
+  text-decoration:none;transition:transform .18s ease,box-shadow .18s ease;
+  box-shadow:0 6px 20px rgba(212,169,74,.28);
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(212,169,74,.36);}
+.btn:focus-visible{outline:2px solid #fff;outline-offset:3px;}
+.btn.ghost{
+  background:transparent;color:var(--gold);border:1px solid rgba(212,169,74,.55);
+  box-shadow:none;margin-top:12px;
+}
+.foot{
+  padding:26px 22px calc(30px + env(safe-area-inset-bottom));
+  text-align:center;font-size:11.5px;color:var(--muted);
+  background:var(--ivory);line-height:1.8;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:520px){
+  .wrap{padding:0 18px;}
+  section{padding:52px 0 6px;}
+  .fp{grid-template-columns:1fr;}
+  .deck-body{padding-left:60px;}
+  .hero-stat b{font-size:19px;}
+  .hero-stat span{font-size:10px;}
+}
+@media (max-width:360px){
+  .deck-btn{padding:11px 12px;gap:9px;}
+  .deck-no{flex:0 0 36px;font-size:13px;}
+  .deck-name b{font-size:13.5px;}
+  .deck-body{padding-left:52px;}
+  .btn{padding:0 24px;font-size:14px;}
+  .hero-stat{padding:13px 3px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wave"></div>
+  <div class="hero-inner">
+    <div class="kicker">Costa Fortuna · Ship Guide</div>
+    <h1>코스타 포르투나<br><em>13개 층, 전부 알고 타기</em></h1>
+    <p>층별안내부터 무료와 유료의 경계, 와이파이, 수영장, 정찬 레스토랑, 음료 패키지까지. 승선 전에 한 번만 읽어두면 배 위에서 헤매지 않습니다.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>13</b><span>승객 데크</span></div>
+      <div class="hero-stat"><b>1,354</b><span>객실</span></div>
+      <div class="hero-stat"><b>2,716</b><span>정원</span></div>
+      <div class="hero-stat"><b>4</b><span>수영장</span></div>
+    </div>
+    <div class="scroll-hint">SCROLL ↓</div>
+  </div>
+</header>
+
+<!-- ============ DECK GUIDE ============ -->
+<section id="decks">
+  <div class="wrap">
+    <span class="overline">Deck Guide</span>
+    <h2>층별 안내</h2>
+    <p class="lead">각 층 이름은 이탈리아 여객선 시절의 기항 도시에서 따왔습니다. 아래 층을 눌러 시설을 확인하세요. <b>진한 번호</b>는 공용시설이 있는 층입니다.</p>
+
+    <div class="stack" id="stack">
+
+      <div class="deck is-public">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">14</span>
+          <span class="deck-name"><b>라스팔마스</b><span>Las Palmas</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>워터슬라이드 입구 <span class="tagfree">무료</span></li>
+          <li>배 꼭대기 층, 객실 없음 — 사진 찍기 좋은 뷰포인트</li>
+        </ul>
+      </div>
+
+      <div class="deck is-public">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">12</span>
+          <span class="deck-name"><b>푼샬</b><span>Funchal</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>사투르니아 스파 &amp; 피트니스 센터 — 헬스장 <span class="tagfree">무료</span> / 마사지·써멀존 <span class="tagpaid">유료</span></li>
+          <li>솔라리움 바 <span class="tagpaid">유료</span></li>
+          <li>스쿼크 키즈클럽 <span class="tagfree">무료</span></li>
+          <li>농구 · 테니스 코트, 조깅 트랙 <span class="tagfree">무료</span></li>
+        </ul>
+      </div>
+
+      <div class="deck is-public">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">11</span>
+          <span class="deck-name"><b>칸</b><span>Cannes</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>클럽 콘테 그란데 1927 — 예약제 유료 정찬 <span class="tagpaid">유료</span></li>
+          <li>비너스 뷰티살롱 <span class="tagpaid">유료</span></li>
+          <li>조깅 트랙 <span class="tagfree">무료</span></li>
+          <li>객실: 발코니 카테고리</li>
+        </ul>
+      </div>
+
+      <div class="deck is-public">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">10</span>
+          <span class="deck-name"><b>바르셀로나</b><span>Barcellona</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>크리스토포로 콜롬보 뷔페 <b>상층</b> <span class="tagfree">무료</span></li>
+          <li>바르셀로나 풀 + 워터슬라이드 <span class="tagfree">무료</span></li>
+          <li>솔라리움 (선베드 구역) <span class="tagfree">무료</span></li>
+          <li>객실: 스위트 · 발코니 · 내측</li>
+        </ul>
+      </div>
+
+      <div class="deck is-public">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">9</span>
+          <span class="deck-name"><b>나폴리</b><span>Napoli</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>크리스토포로 콜롬보 뷔페 1954 <b>하층</b> <span class="tagfree">무료</span></li>
+          <li>콜롬보 풀 — 개폐식 유리돔, 비 와도 수영 가능 <span class="tagfree">무료</span></li>
+          <li>오세아니아 풀 + 리도 바 <span class="tagfree">무료</span></li>
+          <li>풀사이드 그릴 (버거 · 핫도그 · 감자튀김) <span class="tagfree">무료</span></li>
+          <li>객실: 스위트 포함 전 카테고리</li>
+        </ul>
+      </div>
+
+      <div class="deck">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">8</span>
+          <span class="deck-name"><b>비고</b><span>Vigo</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>객실 전용 층 — 미니스위트 · 발코니 · 내측</li>
+          <li>공용시설 없음 = 조용한 편</li>
+        </ul>
+      </div>
+
+      <div class="deck">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">7</span>
+          <span class="deck-name"><b>카라카스</b><span>Caracas</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>객실 전용 층 — 그랜드스위트부터 내측까지 전 카테고리</li>
+          <li>배 중앙부, 흔들림이 가장 적은 층대</li>
+        </ul>
+      </div>
+
+      <div class="deck">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">6</span>
+          <span class="deck-name"><b>리스본</b><span>Lisbona</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>객실 전용 층 — 미니스위트 · 발코니 · 내측</li>
+          <li>바로 아래 5층이 라운지·카지노 층이라 심야 소음 체크 필요</li>
+        </ul>
+      </div>
+
+      <div class="deck is-public">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">5</span>
+          <span class="deck-name"><b>제노바</b><span>Genova</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>렉스 극장 <b>상층</b> — 공연 <span class="tagfree">무료</span></li>
+          <li>레오나르도 다빈치 라운지 <span class="tagfree">무료</span></li>
+          <li>콘테 베르데 댄스 라운지 <span class="tagfree">무료</span></li>
+          <li>콘테 로쏘 피아노 바 1921 <span class="tagpaid">음료 유료</span></li>
+          <li>콘테 디 사보이아 그랜드 바 <span class="tagpaid">음료 유료</span></li>
+          <li>넵투니아 카지노 <span class="tagpaid">유료</span></li>
+          <li>면세점 · 포토 갤러리 <span class="tagpaid">유료</span></li>
+        </ul>
+      </div>
+
+      <div class="deck">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">4</span>
+          <span class="deck-name"><b>산투스</b><span>Santos</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>미켈란젤로 · 라파엘로 정찬 레스토랑 <b>상층</b> <span class="tagfree">무료</span></li>
+          <li>객실: 발코니 · 내측</li>
+        </ul>
+      </div>
+
+      <div class="deck is-public">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">3</span>
+          <span class="deck-name"><b>부에노스아이레스</b><span>Buenos Aires</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>리스토란테 미켈란젤로 1965 (후미, 큰 쪽 · 약 1,000석) <span class="tagfree">무료</span></li>
+          <li>리스토란테 라파엘로 1965 (중앙, 약 700석) <span class="tagfree">무료</span></li>
+          <li>렉스 극장 <b>하층</b> <span class="tagfree">무료</span></li>
+          <li>코스타 아트리움 &amp; 바 — 천장에 26척의 역대 코스타 선박 모형</li>
+          <li>리셉션 · 인포메이션 데스크</li>
+        </ul>
+      </div>
+
+      <div class="deck">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">2</span>
+          <span class="deck-name"><b>마이애미</b><span>Miami</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>객실 전용 층 — 해측 · 내측</li>
+          <li>승하선 게이트가 가까워 기항지 내리기 편함</li>
+        </ul>
+      </div>
+
+      <div class="deck">
+        <button class="deck-btn" type="button" aria-expanded="false">
+          <span class="deck-no">1</span>
+          <span class="deck-name"><b>리우데자네이루</b><span>Rio de Janeiro</span></span>
+          <span class="deck-arrow">›</span>
+        </button>
+        <ul class="deck-body">
+          <li>가장 아래 객실 층 — 해측 · 내측</li>
+          <li>흔들림에 예민하면 오히려 유리한 위치</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="note"><b>13층은 없습니다.</b> 유럽 선사 관례로 12층 다음이 바로 14층입니다. 엘리베이터에서 당황하지 마세요.</div>
+  </div>
+</section>
+
+<!-- ============ FREE VS PAID ============ -->
+<section id="freepaid">
+  <div class="wrap">
+    <span class="overline">Free or Paid</span>
+    <h2>무료 · 유료 한눈에</h2>
+    <p class="lead">코스타는 기본 요금이 저렴한 대신 포함 범위가 좁은 편입니다. 이 선이 어디인지만 알면 예산이 흔들리지 않습니다.</p>
+
+    <div class="fp">
+      <div class="fp-col fp-free">
+        <h3>요금에 포함</h3>
+        <ul>
+          <li>예약한 등급의 객실</li>
+          <li>정찬 레스토랑 · 뷔페의 하루 세 끼</li>
+          <li>풀사이드 그릴 (점심 시간대)</li>
+          <li>뷔페의 수돗물, 조식의 커피 · 차 · 우유 · 주스</li>
+          <li>수영장 · 자쿠지 · 헬스장</li>
+          <li>렉스 극장 공연 등 대부분의 라이브 엔터테인먼트</li>
+          <li>데크에서 열리는 피트니스 클래스</li>
+          <li>선내 일정표에 표기된 무료 액티비티</li>
+        </ul>
+      </div>
+      <div class="fp-col fp-paid">
+        <h3>추가 요금</h3>
+        <ul>
+          <li>서비스 차지 (필수 · 1인 1박 €11 수준)</li>
+          <li>유료 정찬, 룸서비스, 젤라토 등 스낵</li>
+          <li>생수 포함 대부분의 음료 · 주류 · 에스프레소</li>
+          <li>와이파이</li>
+          <li>스파 트리트먼트, 써멀존, 스파 내 피트니스 클래스</li>
+          <li>기항지 투어</li>
+          <li>사진, 쇼핑, 카지노</li>
+          <li>세탁 서비스, 베이비시팅</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note">
+      <b>가장 많이 놀라는 지점 두 가지.</b><br>
+      ① 정찬 레스토랑에서는 수돗물이 안 나옵니다. 물은 병으로 사야 해요. 뷔페 층에서 텀블러를 채워 가면 그만큼 아낍니다.<br>
+      ② 서비스 차지는 팁이 아니라 <b>필수 비용</b>입니다. 여기에 더해 선상에서 주문하는 음료에는 15%가 자동으로 붙습니다.
+    </div>
+  </div>
+</section>
+
+<!-- ============ WIFI ============ -->
+<section id="wifi">
+  <div class="wrap">
+    <span class="overline">Wi-Fi</span>
+    <h2>와이파이 사용법</h2>
+    <p class="lead">배는 위성으로 인터넷을 씁니다. 무료 와이파이는 없고, 패키지를 사거나 분당 요금으로 결제합니다.</p>
+
+    <div class="card">
+      <h3>접속 순서</h3>
+      <div class="sub">승선 직후 5분이면 끝납니다</div>
+      <div class="steps">
+        <div class="step"><span class="step-n">1</span><span class="step-t"><b>기기 설정에서 선내 와이파이 선택</b>코스타 전용 네트워크 이름이 뜹니다. 비밀번호는 없습니다.</span></div>
+        <div class="step"><span class="step-n">2</span><span class="step-t"><b>브라우저가 자동으로 포털 페이지로 이동</b>안 뜨면 아무 주소나 입력해 보세요.</span></div>
+        <div class="step"><span class="step-n">3</span><span class="step-t"><b>객실 번호와 이름으로 로그인</b>승선 카드에 적힌 정보 그대로 넣습니다.</span></div>
+        <div class="step"><span class="step-n">4</span><span class="step-t"><b>패키지 선택 후 결제</b>선상 계정으로 청구됩니다. 기기별로 등록되니 여러 기기를 쓸 계획이면 미리 정하세요.</span></div>
+        <div class="step"><span class="step-n">5</span><span class="step-t"><b>사용 후 반드시 로그아웃</b>분당 요금제라면 로그아웃을 잊는 순간 계속 과금됩니다.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>패키지 종류</h3>
+      <div class="sub">2026년 초 코스타 카리브해 항로 기준 · 항로와 시즌마다 다름</div>
+      <ul>
+        <li><span class="price">€6 / 일</span>메신저 전용 — 카톡·왓츠앱 정도만</li>
+        <li><span class="price">€12 / 일</span>소셜 패키지 — 인스타·페북·틱톡 등 SNS 포함</li>
+        <li><span class="price">€19 / 일</span>풀 인터넷 — 웹·업무·영상까지</li>
+        <li><span class="price">€3 + €0.5/분</span>분당 요금제 — 기기당 개통료 €3, 이후 분당 과금</li>
+      </ul>
+      <div class="note" style="margin-top:16px;">
+        <b>아끼는 법.</b> 온라인 사전 구매 시 8~10% 할인, 두 기기를 함께 사면 15%까지 내려갑니다. 기항 전후 각 1시간 정도는 육지 통신이 잡히니 그 시간을 노리면 하루치를 아낄 수 있어요. 메시지는 오프라인에서 미리 작성해 두고 접속해서 전송만 하세요.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POOL ============ -->
+<section id="pool">
+  <div class="wrap">
+    <span class="overline">Pool &amp; Jacuzzi</span>
+    <h2>수영장과 자쿠지</h2>
+    <p class="lead">수영장과 자쿠지는 전부 무료입니다. 유료로 바뀌는 건 스파 안쪽의 써멀존뿐이에요.</p>
+
+    <div class="card">
+      <h3>콜롬보 풀 <span class="price">9층</span></h3>
+      <div class="sub">개폐식 유리돔</div>
+      <p>뷔페 후미에 있고 천장이 유리돔으로 덮여 비가 오거나 바람이 불어도 수영할 수 있습니다. 그만큼 가족 단위가 몰리는 곳이라 조용함을 원하면 피하는 게 낫습니다.</p>
+    </div>
+
+    <div class="card">
+      <h3>오세아니아 풀 <span class="price">9층</span></h3>
+      <div class="sub">중앙 메인 풀</div>
+      <p>낮 시간 음악과 데크 이벤트가 열리는 가장 활기찬 구역. 리도 바와 풀사이드 그릴이 바로 옆이라 동선이 편합니다.</p>
+    </div>
+
+    <div class="card">
+      <h3>바르셀로나 풀 <span class="price">10층</span></h3>
+      <div class="sub">워터슬라이드 연결</div>
+      <p>워터슬라이드가 딸린 풀. 슬라이드 입구는 맨 위 14층에 있습니다. 옆으로 솔라리움 선베드 구역이 이어집니다.</p>
+    </div>
+
+    <div class="card">
+      <h3>자쿠지 (월풀)</h3>
+      <div class="sub">데크 곳곳 · 무료</div>
+      <p>풀 주변에 자쿠지가 배치되어 있고 전부 무료입니다. 다만 오후 3~6시에는 거의 항상 만석이니, <b>이른 아침이나 저녁 식사 시간대</b>가 가장 여유롭습니다.</p>
+      <ul>
+        <li>수영복은 필수, 객실 가운 차림으로는 입장 제한이 있습니다</li>
+        <li>수건은 데크의 타월 스테이션에서 카드로 대여 — 반납 안 하면 요금이 붙습니다</li>
+        <li>기항일 낮에는 대부분 하선하므로 선내 풀이 텅 빕니다. 사진 찍기 가장 좋은 타이밍</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <b>써멀존은 별도입니다.</b> 스파 안쪽의 사우나·스팀룸·전용 자쿠지는 마사지를 받아도 포함되지 않습니다. 1일권 €39, 주간권 €150 수준. 공용 자쿠지가 무료인 만큼 굳이 살 필요가 있는지 먼저 따져 보세요.
+    </div>
+  </div>
+</section>
+
+<!-- ============ DINING ============ -->
+<section id="dining">
+  <div class="wrap">
+    <span class="overline">Dining</span>
+    <h2>정찬 레스토랑</h2>
+    <p class="lead">코스타는 유럽식이라 저녁이 하루의 중심입니다. 정찬은 자유석이 아니라 <b>지정 시간제</b>라는 점이 미국 선사와 가장 다릅니다.</p>
+
+    <div class="card">
+      <h3>리스토란테 미켈란젤로 1965 <span class="price">3–4층</span></h3>
+      <div class="sub">메인 정찬 · 요금 포함</div>
+      <p>후미에 있는 두 층짜리 큰 정찬 레스토랑으로 약 1,000석. 3면이 창이라 항해일 점심이 특히 좋습니다. 조식·중식은 자유석, 저녁만 지정 시간제입니다. 천장에 미켈란젤로 프레스코화 복제가 그려져 있어요.</p>
+    </div>
+
+    <div class="card">
+      <h3>리스토란테 라파엘로 1965 <span class="price">3–4층</span></h3>
+      <div class="sub">메인 정찬 · 요금 포함</div>
+      <p>중앙부의 작은 쪽 정찬 레스토랑, 약 700석. 저녁에만 엽니다. 메뉴는 미켈란젤로와 동일하고 분위기가 조금 더 차분합니다.</p>
+      <ul>
+        <li>저녁은 보통 <b>1부 18:30 / 2부 21:00</b> 두 타임 (항로마다 다름)</li>
+        <li>테이블·시간 배정은 승선 카드에 인쇄되어 있습니다</li>
+        <li>정찬 안에서도 별도 요금 특선 메뉴가 따로 있습니다</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>크리스토포로 콜롬보 뷔페 1954 <span class="price">9–10층</span></h3>
+      <div class="sub">캐주얼 뷔페 · 요금 포함</div>
+      <p>조식·중식·오후 티타임·석식까지 커버하는 뷔페. 16~17시에는 샌드위치와 케이크가 나오는 티타임, <b>21시 이후에는 웨이터 서비스 피자집</b>으로 바뀝니다. 늦은 밤 배고플 때 가장 든든한 카드예요.</p>
+    </div>
+
+    <div class="card">
+      <h3>클럽 콘테 그란데 1927 <span class="price">11층</span></h3>
+      <div class="sub">예약제 스페셜티 · 유료 (1인 €23~28 수준)</div>
+      <p>배에서 가장 격식 있는 다이닝. 애피타이저 · 파스타 또는 수프 · 메인 · 디저트로 이어지는 코스이고 피아노 연주가 함께합니다. 좌석이 적어 승선 첫날 예약하는 편이 안전합니다.</p>
+    </div>
+
+    <div class="note">
+      <b>식사 시간 공백을 기억하세요.</b> 풀 그릴이 18시쯤 닫히고 정찬은 그 이후에 열립니다. 그 사이 한 시간 정도는 무료로 먹을 곳이 사실상 없습니다. 늦은 아침과 심야도 선택지가 매우 제한적이에요.
+    </div>
+  </div>
+</section>
+
+<!-- ============ DRINKS ============ -->
+<section id="drinks">
+  <div class="wrap">
+    <span class="overline">Drink Package</span>
+    <h2>음료 · 알콜 패키지</h2>
+    <p class="lead">코스타는 음료가 요금에 포함되지 않습니다. 대신 단품 가격이 다른 선사보다 저렴해서, 많이 마시지 않는다면 패키지가 손해일 수도 있어요.</p>
+
+    <div class="card">
+      <h3>단품 가격대</h3>
+      <div class="sub">2026년 초 기준 · 여기에 15% 서비스료가 자동 추가</div>
+      <ul>
+        <li><span class="price">€2–4</span>에스프레소 계열 커피</li>
+        <li><span class="price">€4</span>탄산음료</li>
+        <li><span class="price">€6–7</span>맥주</li>
+        <li><span class="price">€8</span>무알콜 칵테일</li>
+        <li><span class="price">€10</span>칵테일 · 와인 글라스</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>무제한 패키지 4종</h3>
+      <div class="sub">선상 구매가 기준 · 1인당 구매, 공유 불가</div>
+      <ul>
+        <li><span class="price">€42 / 일</span><b>마이드링크</b> — 물·탄산·아이스티·주스·스페셜티 커피·생맥주·하우스 와인·하우스 리큐어·클래식 칵테일</li>
+        <li><span class="price">€57 / 일</span><b>마이드링크 플러스</b> — 위 전부 + 병맥주·프리미엄 주류·프리미엄 칵테일·미니바</li>
+        <li><span class="price">€24 / 일</span><b>마이드링크 밀즈</b> — 식사 시간에만 물·탄산·생맥주·하우스 와인·커피</li>
+        <li><span class="price">€27 / 일</span><b>마이소프트드링크</b> — 무알콜 전용</li>
+      </ul>
+      <div class="note" style="margin-top:16px;">
+        <b>사전 구매가 핵심입니다.</b> 마이드링크 기준 온라인 사전 구매 시 하루 €42가 €29대로 떨어져 약 40% 차이가 납니다. 승선해서 사면 가장 비싸요.
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>패키지, 사야 할까</h3>
+      <div class="sub">간단한 손익분기</div>
+      <p>하루에 <b>칵테일이나 와인 4잔 이상</b>을 마신다면 마이드링크가 이깁니다. 아침 커피 한 잔에 저녁 반주 한두 잔 정도라면 단품이 저렴합니다. 술을 안 드시는 분이 커피와 물만 마신다면 무알콜 패키지도 대체로 손해예요.</p>
+      <ul>
+        <li>패키지는 잔 단위 기준 — 생수는 1인 1박 0.5L 한 병까지만 포함</li>
+        <li>C|Club(무료 멤버십) 가입 시 와인 보틀이 15~50% 할인됩니다</li>
+        <li>일행끼리 나눠 마실 수 없고, 객실 동반자도 각자 사야 하는 규정이 있습니다</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOTICE ============ -->
+<section id="notice">
+  <div class="wrap">
+    <div class="notice">
+      <span class="overline">Heads-up</span>
+      <h3>포르투나는 곧 코스타를 떠납니다</h3>
+      <p>2003년에 지어진 포르투나는 마가리타빌 앳 씨로 매각되어 <b>2026년 9월</b> 코스타 선단에서 빠집니다. 대규모 개조를 거쳐 2027년 1월부터 다른 이름으로 운항할 예정이라, 이 층별안내와 시설 구성은 그 전까지의 코스타 운항 기준입니다.</p>
+    </div>
+    <div class="note">
+      본 페이지의 요금은 2026년 초 코스타 선박 실제 탑승 사례를 기준으로 정리한 <b>참고용 금액</b>입니다. 항로·시즌·선박에 따라 달라지므로 최종 확인은 예약 계정에서 해주세요.
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<div class="cta">
+  <div class="quote">"누군가를 따라하는 게 아닌,<br>나답게 살아가는 것."</div>
+  <div class="rule"></div>
+  <div class="mark">🛳️</div>
+  <span class="overline">Sail with Bella</span>
+  <h2>한 잔, 할까요?</h2>
+  <p>여행, 일, 자유에 관한 이야기를 나눕니다.<br>크루즈 멤버십 구독 플랫폼이 궁금하시다면 편하게 물어보세요.</p>
+  <a class="btn" href="https://open.kakao.com/o/sbJudavg" target="_blank" rel="noopener">✈️🛳️ 오픈카톡 입장</a><br>
+  <a class="btn ghost" href="https://bella1004_ko.incruises.com/membership" target="_blank" rel="noopener">크루즈 멤버십 살펴보기</a>
+</div>
+
+<div class="foot">
+  코스타 포르투나 가이드 · 2026년 8월 기준<br>
+  선내 시설과 요금은 변경될 수 있습니다.
+</div>
+
+<script>
+(function(){
+  var stack = document.getElementById('stack');
+  if(!stack) return;
+  stack.addEventListener('click', function(e){
+    var btn = e.target.closest('.deck-btn');
+    if(!btn) return;
+    var deck = btn.parentElement;
+    var open = deck.classList.contains('open');
+    stack.querySelectorAll('.deck.open').forEach(function(d){
+      d.classList.remove('open');
+      d.querySelector('.deck-btn').setAttribute('aria-expanded','false');
+    });
+    if(!open){
+      deck.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
